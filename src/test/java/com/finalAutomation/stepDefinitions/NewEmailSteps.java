@@ -1,5 +1,6 @@
 package com.finalAutomation.stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,25 +12,25 @@ public class NewEmailSteps {
         throw new cucumber.api.PendingException();
     }
 
-    @Given("we are logged in the application")
+    @And("we are logged in the application")
     public void we_are_logged_in_the_application() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
-    @Given("we have an email address as target")
+    @And("we have an email address as target")
     public void we_have_an_email_address_as_target() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
-    @Given("we have a mail subject")
+    @And("we have a mail subject")
     public void we_have_a_mail_subject() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
-    @Given("we have a mail content")
+    @And("we have a mail content")
     public void we_have_a_mail_content() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
