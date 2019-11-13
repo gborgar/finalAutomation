@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 public class NewEmailSteps {
     @Given("we are an user with an email address")
     public void we_are_an_user_with_an_email_address() {
-        // Write code here that turns the phrase above into concrete actions
+
         throw new cucumber.api.PendingException();
     }
 
@@ -24,14 +24,14 @@ public class NewEmailSteps {
         throw new cucumber.api.PendingException();
     }
 
-    @And("we have a mail subject")
-    public void we_have_a_mail_subject() {
+    @And("we have an email subject")
+    public void we_have_an_email_subject() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
-    @And("we have a mail content")
-    public void we_have_a_mail_content() {
+    @And("we have an email content")
+    public void we_have_an_email_content() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
