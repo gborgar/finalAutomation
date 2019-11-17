@@ -1,21 +1,31 @@
 package com.finalAutomation.stepDefinitions;
 
+import com.finalAutomation.settings.Login;
+import com.finalAutomation.settings.User;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class NewEmailSteps {
-    @Given("we are an user with an email address")
-    public void we_are_an_user_with_an_email_address() {
-
-        throw new cucumber.api.PendingException();
+    private Login login;
+    public User user;
+    public NewEmailSteps() {
+        this.login = new Login();
     }
 
-    @And("we are logged in the application")
+    @Given("we are an user with an email address")
+    public void we_are_an_user_with_an_email_address() {
+        this.user = this.login.getUser();
+    }
+
+    @Given("we are logged in the application")
     public void we_are_logged_in_the_application() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        this.login.goToLogin();
+//        this.login.enterUsername(user.getUsername());
+//        this.login.nextButtonClick();
+//        this.login.enterPassword(user.getPassword());
+//        this.login.nextButtonClick();
     }
 
     @And("we have an email address as target")
